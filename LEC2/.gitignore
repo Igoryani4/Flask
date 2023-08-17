@@ -8,6 +8,10 @@
 *.o
 *.so
 *.pyc
+*.js
+*.css
+*.map
+
 
 # Packages #
 ############
