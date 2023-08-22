@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+Home page
+{% endblock %}
+
+{% block content %}
+    {% if session.username %}
+        <h1>Привет {{ session.username }}</h1>
+        <a href="/logout">Log out</a>
+        <!-- <form><input type=submit href="/logout" value="Exit"></form> -->
+    {% else %}
+        <a href="/login">Login</a>
+    {% endif %}
+    <h1>Welcome to home page</h1>
+{% endblock %}
