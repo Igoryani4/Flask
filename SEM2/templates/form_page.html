@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="/static/css/bootstrap.css">
+   <title>Главная</title>
+</head>
+<body>
+   {% if error %}
+      <h2> Error password or login not tru </h2>
+   {% endif %}
+   <!-- <form method="post" enctype="multipart/form-data"> -->
+      <form method="post">
+      <input type="text" placeholder="login" name="name"><br>
+      <input type="password" placeholder="password" name="password"><br><br>
+      <input type=submit value="load">
+   </form>
+</body>
+</html>
